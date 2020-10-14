@@ -55,31 +55,34 @@ public enum RomanNumerals {
     }
 
     public static String toString(int value) {
-        if (value<10) {
+        if (value<=10) {
             return toString2(value);
         }else {
-            if(value>10 && value<20){
+            if(value>10 && value<=20){
                 return X.key + toString(value - 10);
             }
-            if(value>20 && value<30){
+            if(value>20 && value<=30){
                 return XX.key + toString(value - 20);
             }
-            if(value>30 && value<40){
+            if(value>30 && value<=40){
                 return XXX.key + toString(value - 30);
             }
             if(value>40 && value<50){
                 return XXXX.key + toString(value - 40);
             }
-            if(value>50 && value<60){
+            if(value == 50){
+                return L.key;
+            }
+            if(value>50 && value<=60){
                 return L.key + toString(value - 50);
             }
-            if(value>60 && value<70){
+            if(value>60 && value<=70){
                 return LX.key + toString(value - 60);
             }
-            if(value>70 && value<80){
+            if(value>70 && value<=80){
                 return LXX.key + toString(value - 70);
             }
-            if(value>80 && value<90){
+            if(value>80 && value<=90){
                 return LXXX.key + toString(value - 80);
             }
             if(value>90 && value<100){
