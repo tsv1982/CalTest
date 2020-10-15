@@ -6,13 +6,11 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
             String str = scanner.nextLine();
 
             String mas[] = str.toUpperCase().trim().split(" ");
 
             System.out.println(new MathOperations().mathOperat(mas));
-        }
 
     }
 }
