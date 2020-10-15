@@ -3,12 +3,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
 
-        String mas[] = str.trim().split(" ");
+        while (true) {
+            String str = scanner.nextLine();
 
-        System.out.println(new IsValids().isValid(mas));
+            String mas[] = str.toUpperCase().trim().split(" ");
+
+            System.out.println(new MathOperations().mathOperat(mas));
+        }
 
     }
 }
